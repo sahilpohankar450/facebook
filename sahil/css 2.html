@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>selectors</h1>
+
+    <!--Element selectors-->
+    <style>
+        h1{
+            color:red;
+        }
+    </style>
+
+    <h4>Element selectors</h4>
+
+    <!-- id selectors-->
+
+     <style>
+        #name{
+            color:blue;
+        }
+     </style>
+
+     <h5 id="name">id selector</h5>
+
+     <!--id is use for unique identification only
+      no othere tag should be have the same id
+    id is respresent in css selector with a '#' -->
+
+    <!-- class selector -->
+     
+    <style>
+        .name{
+            color:  rgb(226, 140, 12);
+        }
+        
+    </style>
+    <h5 class="name">class selector</h5>
+    <!-- class is used for common identification 
+     othere tag cab have the same class also
+     class is represented in css with a '.' -->
+
+     <!-- universal selector -->
+
+     <style>
+        *{
+            font-size: 25px;
+            font-weight: bolder;
+            color: brown;
+        }
+     </style>
+     <p>universal selector</p>
+
+     <!-- universal selector used only once in a webpage 
+          universal selector is represent in css with a '*'-->
+
+        <!-- multipal/group selector-->
+         <style>
+             #name,#multi,h4,.name{
+             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+             }
+             
+         </style>
+
+         <h5 id="multi">multiple/group selector </h5>
+
+         <!-- it is used to add multipal selector to have a common styling 
+           each selector is represent by a comma ','-->
+
+</body>
+</html>

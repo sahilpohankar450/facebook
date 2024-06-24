@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag example</title>
+</head>
+       
+<body style="background-color: rgb(196, 233, 255);">
+    
+       <h2 style="text-align: center;">Tag Example</h2><hr>
+
+       <lable for="count"><h2>Country :</h2></lable>
+       <input list="list_country" id="count">
+
+
+    <datalist id="list_country">
+       <option value="India"></option>
+        <option value="Austrilia"></option>
+        <option value="Landan"></option>
+        <option value="Japan"></option>
+    </datalist>
+            <!--output tag--> 
+            
+            <h2> Output tag example :</h2>
+             
+               <form onclick="sum.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="number"   id="a" value="30"> + 
+                <input type="number" id="b" value="8"> =  
+                <output name="sum" for="a b"></output>  <hr> 
+            </form>
+</body>
+</html>

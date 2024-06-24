@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- svg tag -->
+     <svg>
+         <!--
+            - svg (scalebal vector Graphics) defines vector-base greaphics in xml
+            - It defines a container for graphical representation.
+         -->
+        <circle cx="60px" cy="60px" r="60px" />
+
+        <!--
+           - cx  -> x cooordinates (default value = 0)
+           - cy  -> y cooordinates (default value = 0)
+           - r   -> radius of the circle
+        -->
+    </svg>
+
+    <svg>
+        <ellipse cx="60px" cy="60px" rx="60px" ry="40px"></ellipse>
+    </svg>
+
+    <!-- Audio Tag -->
+
+    <audio controls autoplay loop muted>
+        <!--
+            - Audio Tag is used to play audio files/ controls/ stream.
+            - It support: Mp3, WAV, and OGG.
+            - Attributes.
+                -> controls : Provides Audio controls
+                -> Autoplay : Provides play the audio it repeats to the begining points.
+                -> Loop     : After finishing the audio it repeatss to the begining points.
+        -->
+        
+        <source scr="./Assets/audio/Playing_in_color.mp3" type="audio/mpeg">
+            <!--
+                source tag is specified to link related to video, audio and picture.
+            -->
+
+    </audio>
+
+    <hr>
+
+    <!-- Video Tag -->
+     <video controls loop autoplay muted>
+        <!--
+           - A video Tag is used to play video contents or stream.
+           - video Formet it supports
+               - Mp4
+               - WebM
+               - OGG
+        - Attributes:
+               - controls : video controls.
+               - Loop     : After Finishing the video it repeats to the begining points.
+               - Autoplay : video started whenever its completly lodeed.
+               - muted    : Muted Audio when the video is Played.
+        -->
+
+        <source src="./Assets/vid/Dubai.Mp4" type="video/mp4"> <!-- video source -->
+        <tract kind="caption" srclang="eng" label="English-sub" default scr="./Assets/vid/subtitl"></tract>
+        
+        
+     </video>
+
+     <hr>
+
+     <embed type="imge/jpg" src=".Assets/img/coffee.png" width="300">
+     <embed type="text/html" src="./html_from.html" height="300">
+     <embed type="video/webm" src="./Assets/vid/Dubai.mp4" height="300">
+        
+        <!--
+           -Embed tag defines a container for an external resorces.
+           -Any brower which oes not supports java Applet, it can be replaced by embed tag.
+           -It gives a better usage inrespective of different html tags.
+        -->
+
+
+    
+</body>
+</html>
