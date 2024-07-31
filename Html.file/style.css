@@ -1,0 +1,16 @@
+.box1 {
+    background-color: blue;
+}
+.box2 {
+    background-color: brown;
+}
+.box3 {
+    background-color: aqua;
+}
+div{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline;
+}

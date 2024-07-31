@@ -1,0 +1,207 @@
+/************************************************** Dictionary in js ***********************************************/
+
+-> dictionary is kay value pair
+-> in js we create key, value pairs with the help of objects
+
+let obj = {
+    name: "sahil",
+    class: "javascript",
+    school name: "DAV",
+    rollNo: 1
+}
+
+console.log(obj.name);
+console.log(obj["school name"]);
+
+/************************************************ Scheduling **************************************/
+
+(1) timeout - you execute a piece of code only once after a set time out
+          e.g. after 15 minutes I will logout the user
+
+          setTimeout(() => {
+            // some code 
+            console.log("inside timeout");
+          }, 5000); //5 seconds
+
+(2) interval - you will execute a piece of code after every set interval
+         e.g. in every 3 second I will check for a new email 
+
+
+
+         setInterval(() => {
+            // same code 
+            console.log("inside timeout")
+         },3000); // 5 seconds
+
+
+/**************************************** Event handling ***********************************/
+
+<buttion onclick="buttononClickHAndler()">
+click me!!
+</button>
+< input type="text" onChange="onTextChange(event)">
+    function buttonnClickHandlear(){
+        alert("Button clicked !!")
+    }
+    function buttononClickHandler(){
+        alert("Button Clicked !!")
+    }
+</input>
+
+/*******************************************Execution Handiling **********************************/
+
+try{
+
+    //code which can throw an Exception /error
+    //api call
+
+
+}catch (Exception)
+//another logic on Exception
+//also make another api call to diff endpoint
+console.log(exeption)
+
+
+
+try{
+     var a= b+30;
+
+}
+catch(exeption){
+    console.log(exeption);
+}
+finaly{
+    console.log("this block always runs);
+}
+
+/******************************************** Asynochronus progaming  19/7/24 ***********************************************/
+
+{
+
+    ...
+    a(); // it take 10s to execute,Api call --> resp --> b();
+    ...
+
+    ...
+    b();
+    ...
+}
+
+a. callback
+b. promises
+
+/////////////////////// callback
+
+const sum = function(a, b, func){
+    let s = a+b;
+    func(s);
+}
+
+const printsum = function(sum) {
+    console.log("sum is : " + sum);
+}
+sum(10, 20, printsum);
+
+// sum -> is higher order funcation
+// printsum -> is a call back funcation
+
+Disadvantage: it goes into call back hell
+
+
+
+//////////////////////// Promises
+
+// promise means an assurance / comituted
+
+let prom = new promise(funcation(resolve, reject){
+
+    // you can make an API call
+    // Scheduling same lines of code
+    // e.g axios() // use it in react
+});
+
+prom.them(funcation(result) {
+
+}).catch(funcation(errroe){
+
+});
+
+...
+...
+
+/// Three states of a promises:
+
+a. Resolved - when you get a success
+b. Reject - When you get a error 
+c. pending - when we are weting to get result 
+
+
+//// Promises code Ex ====>
+
+let prom = new Promise(function(resolve, reject){
+// 1. We can when an API call
+// 2. we can shedulve a code execution
+
+
+console.log("promise is an pending state")
+setTimeout(() => {
+//console.log("promise is a resolved")
+//respolved("education")
+console.log("promise is rejected")
+reject(null);
+},3000);
+});
+
+prom.then(function(result) {
+ console.log("succes value :" + result);
+ 
+ }).catch(function(error) {
+ console.log("Error value :" + error)
+ })
+ 
+
+ // Asyns & Await
+
+ asyns funcation abc() {
+
+let prom = new Promise(function(resolve, reject){
+// 1. We can when an API call
+// 2. we can shedulve a code execution
+console.log("promise is an pending state")
+setTimeout(() => {
+//console.log("promise is a resolved")
+//respolved("education")
+console.log("promise is rejected")
+reject(null);
+},3000);
+});
+let response;
+return response;
+
+ }
+
+ abc().then(function(result){
+     console.log("success value : " + result);
+ });catch.(function(error) {
+     console.log("Error value : " + error0);
+ });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

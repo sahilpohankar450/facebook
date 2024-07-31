@@ -1,0 +1,32 @@
+/******************************* ternary operator *****************************/
+
+if (condition) {
+    //statement in if block
+} else {
+    //statement in else block
+}
+
+if (condition) {
+
+}
+
+(condition) ? (stament in if block) : (stament in else block); // valid
+(condition) ? (stament in if block); // Not valid, throw an error
+
+
+******************************************************************************************
+if  (condition) {
+    //stament in if block
+
+    if (condition) {
+        // stament in if block
+    }else {
+        // stament in else block
+    }
+
+}else {
+    // stament in else block
+}
+
+(condition) ? (condition) ? (stament in if block) : (stament in else block 
+)

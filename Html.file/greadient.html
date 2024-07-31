@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Gradients</h1>
+    <!--
+        Gradient:
+                - smoother trassition of two or more colors
+                
+        Type of Gradientes:
+             -> Liner Gradient (goes from one side to another)
+             -> Radial Gradient (circul path)
+             -> conic Gradient (cone path)   
+     -->
+
+     <h2> Linear Gradient </h2>
+     <!--
+         linear Gradient
+           Syntex:
+                 background-image: linear-gradient(direction, color1. color2,..)
+    -->
+        
+    <div style="display: inline-block;
+                width:150px;
+                height: 150px;
+                border: 1px solid black;
+                
+                background-image: linear-gradient(cyan, orange);">
+        Example of a Linear Gradients(defult)
+    </div>
+
+    <div style="display: inline-block;
+                width: 150px;
+                height: 150px;
+                border: 1px solid black;
+
+                background-image: linear-gradient( to left, cyan, orange );">
+        Example of a Linear Gradients (to Left/ right/top/bottom)
+    </div>
+
+    <div style="display: inline-block;
+                width: 150px;
+                height: 150px;
+                border: 1px solid black;
+
+                background-image:linear-gradient( to left, cyan , orange);">
+        Example of a Linear Gradients(angle)
+    </div>
+
+    <div style="display: inline-block;
+                width: 150px;
+                height: 150px;
+                border: 1px solid black;
+
+                 background-image:linear-gradient(orange,red,green,white);">
+         Example of a Linear Gradients(angle-degree)
+    </div>
+    <hr>
+
+    <h2>Radial Gradient</h2>
+    <!--
+        Redial Greadient
+               syntex
+                   background-image:radial-gradients(change or position, color1,color2,...);
+    -->            
+
+    <div style="display: inline-block;
+                 width: 150px;
+                 height: 150px;
+                 border: 1px solid black;
+                 
+                 background-image: radial-gradient(cyan,orange);">
+                 Example of a Radial Gradient 
+    </div>
+
+    <div style="display: inline-block;
+                   width: 150px;
+                   height: 150px;
+                   border: 1px solid black;
+                   
+                   background-image:radial-gradient(cyan,orange) ;">
+                Explain of radial gradient (default)
+    </div>
+        
+    <div style="display: inline-block;
+                   width: 150px;
+                   height: 150px;
+                   border: 1px solid black;
+                   
+                   background-image:repeating-radial-gradient(cyan 10%,orange 15%,red 25%);">
+                Explain of radial gradient (repeation of colore)
+    </div>
+    
+    <div style="display: inline-block;
+                width: 150px;
+                height: 150px;
+                border: 1px solid black;
+    
+                background-image:repeating-radial-gradient(cyan 15%,orange 20%,red 25%,white 30%);">
+              Explain of radial gradient (repeation of colore)
+   </div>
+
+  <hr>
+     <h2>conic Gradient</h2>
+     <!--
+        conio Greadient
+               syntex
+                   background-image:radial-gradients(change or position, color1,color2,...);
+                  
+    -->
+
+    <div style="display: inline-block;
+                 width: 150px;
+                 height: 150px;
+                 border: 1px solid black;
+                 
+                 background-image:conic-gradient(cyan,orange);">
+                 Example of conic Gradient 
+    </div>
+
+    <div style="display: inline-block;
+                   width: 150px;
+                   height: 150px;
+                   border: 1px solid black;
+                   
+                   background-image:conic-gradient(cyan 25%,orange 50%) ;">
+                Explain of conic gradient (position value)
+    </div>
+        
+    <div style="display: inline-block;
+                   width: 150px;
+                   height: 150px;
+                   border: 1px solid black;
+                   
+                   background-image:conic-gradient(cyan,orange 50% );">
+                Explain of conic Gradient (position value)
+    </div>
+
+    <div style="display:inline-block ;
+                  width: 150px;
+                  height: 150px;
+                  border: 1px solid black;
+                  
+                  background-image: repeating-conic-gradient( cyan 10%,orange 10%, red 15%, white 10%,green 10%);">
+                  Explain of conic Graident(starting and the ending value at point)
+    </div>
+    
+</body>
+</html>

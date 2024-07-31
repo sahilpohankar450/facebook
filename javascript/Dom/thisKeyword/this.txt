@@ -1,0 +1,19 @@
+class restaurantManager {
+    // data values
+    restaurantlist = [
+        { name: "KFC" ,location: "Rajiv chouk", city: "Delhi"},
+        { name: "Subay", location: "BKC", city: "Mumbai"},
+        { name: "Domino's", location: "MG Road", city: "Bangalore"}
+
+    ];
+
+
+// funcationality
+  printALLNames() {
+    this.restaurantlist.forEach((sahil) =>{
+        console.log(sahil.name);
+    });
+  }
+}
+let obj = new restaurantManager();
+obj.printALLNames();

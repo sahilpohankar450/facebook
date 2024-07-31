@@ -1,0 +1,197 @@
+/******************************************************* Array statement in js *****************************************************/
+
+
+Array: is a contiginus memory location location holding some data. data type of the data may be different 
+       in each of the memory location
+
+var array1 = []; //empty arrayvar array2 =[
+  1,//numberr
+  "Javascript", //string
+  2,//number
+  3,//number
+  null,/null
+  undifind, //undifined
+  6, //number
+  "class", // string
+  true //boolen
+  [], //array
+  [ // array
+      1,
+      2,
+      3,
+      ]
+      {}, //object
+      {//object
+       name: "sahil",
+       class:"javascriopt"
+       }
+]
+
+array in js are zero  based indexedDB.cmp
+
+var array3=["A", "B", "c", "D"]
+             0    1    2    3
+
+array3[0]; //first element of aray 
+
+//length
+
+array3.length;//give the length of the array, 4
+array3.[array3.length-1]; //last element of the array //D
+
+//push
+
+array3.push(1); // add iteam in the end of an array,["A","B","c","D","1"]
+
+//pop
+
+aray3.pop(); // remove an item from the end of an array, ["A","B","C","D"]
+
+/******************************************* Example ****************************************/
+
+var arr = ["Welcome to js", "Hello", 62, true];
+
+        /* console.log(arr[0]);
+        console.log(arr = [arr.length - 4]);  */
+
+        arr.push("sahil", 21, false);
+        console.log(arr);
+        arr.pop();
+        console.log(arr);
+
+ ************************************************* 23/7/24 **********************************
+/// unshift   
+array3.unshift(0); // add item in the start of an array, [0, "A", "B", "c", "D"]
+
+///shift
+array3.shift(); // remove an iteam from the start of an array, ["A", "B", "C", "D"]
+
+//////filter 
+var array4 = [1,2,3,4,5,6,7,8,9,10];
+
+fumcation filterEvent(iteam) {
+       console.log(item);
+       return iteam % 2 == 0;
+}
+
+var eveannumbers = array4.filter(filterEvent);
+
+var array5 = [1,23, true, "abc"];
+
+funcation filternNumber(iteam) {
+       console.log(item);
+       return typeof item == 'number || typeof item == 'string';
+}
+var numberonly = array5.filter(filternNumber);
+console.log(array5)
+console.log(numbersonly)
+
+//////////Map
+
+var array6 =[1,2,3,4,5,6,7,8];
+
+function multiplyNumber(iteam){
+       return iteam * 10;
+}
+var resultArray6= array6.map(multiplyNumber);
+console.log(array6);
+console.log(resultArray6);
+
+
+///////searching method
+funcation name2() {
+  //
+}
+name2();
+
+const name3 = fumcation() {
+       //
+}
+name3();
+
+conast name4 = () =>  {
+  //
+}
+name4();
+
+
+var array = [1,2,3,4,5,];
+funcation mapper(num) {
+       return num * 2;
+}
+var result = array.map(mapper);
+ console.log(result);
+ 
+var result = array.map((num) =>  {
+       return num * 2;
+});
+
+/****************************************** 24/7/24 ****************************************/
+
+///for Each
+
+var array5 = [1, 2, 3, 4, 5, 6, 7, 8];
+
+function multiplyNumber(item) {
+    return item * 10;  
+}
+
+array5.forEach(function(item, index, array) {
+    array[index] = multiplyNumber(item);
+});
+
+console.log(array5);  
+
+////Find
+
+var array10 = ["a", "b", "sahil", 2, 4, true, null, undefined, {}, []];
+
+function search(item) {
+    return item === "sahil";  // Use strict equality operator (===) for exact match
+}
+
+var findresult = array10.find(search);
+
+console.log(findresult);
+
+
+///concat
+
+var array7 = ['a', 'b', 'c'];
+
+var array8 = [1,2,3];
+
+var array9 = [true, false, true];
+
+array7 =array7.concat(array8, array9);
+
+/// sort
+
+var array12 = [3,6,2,78,43,56,111,433,8,9];
+function sortMyArray(a,b){
+       return a-b;
+}
+var sortResult = array12.sort(sortMyArray);
+console.log(sortResult);
+
+var array13 = ['b', 'z', 'a', 'f', 'e', 'g'];
+console.log(array13.sort());
+
+
+/*************************** dafult params  26/7/24 ***************************/
+
+funcation sum(a,b) {
+       return a + b;
+}
+
+console.log(sum(10, 20)); //30
+console.log(sum(10)); //NaN
+
+function sum1(a=0, b=0) {
+       return a + b;
+
+}
+
+console.log(sum1(10, 20)); //30
+console.log(sum1(10)); // 10 
+

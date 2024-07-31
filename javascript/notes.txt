@@ -1,0 +1,552 @@
+
+/************************************************************ Theory of javacript****************************************************/
+
+javacript:
+
+(1)  Makes the page interactiv
+(2) is very fast - js runs on the clint machine 
+(3) there is no comilation and no  dependancy on the servers in the BE
+(4) Interpreter
+
+Java Not Equal to javacript, they are no way related
+
+       Java / c#        |     javascript
+                        |
+    (1)  compiler       |    Interpreter
+    (2) a BE langauge   |   a FE langauge
+    (3) server involved |   No server involved
+
+
+    (1) A programer  writes code in a programing langauge (high level)
+    (2) The programer code is converted to an intermidate code 
+
+       a.
+       b.
+
+    (3) This intermidate code then gets converted to machine code (low leve)
+    (0's and 1's)
+
+
+    George Booles  - 0 and 1
+
+    compiler: reads the entire code and converts it as a whole check to the 
+    machine code at once.
+                 * if your code has problems, gets detected early and code will
+                 not compiler
+                 * it is a slow process
+
+    Interpreter: read once line of code at a time and converted in to machine code.
+                 * Even if your code has issued, you can still see the o/p till
+                   Interpreter   reaches to bad code 
+                 * it is a fast process
+
+
+/************************** Variaable in js *************************/
+
+Variaable: name given to memory location temporarily
+
+ /********************* Hosting in javascript importent question ********************/ 
+
+variable can be created  using the following keywords
+(1)   var
+          console.log(num1);    //undefined Hosting
+          var num=10;
+          num1=15;   // no Error
+          console.log(num1); //15
+
+          *(1) Access the variable before initialization ,no Error
+          *(2) can re-assign the value(mutable)
+          *(3) it has a funcationl scope
+
+(2)   let
+          console.log(num2);    //uncaught Reference Error: cannot access 'num2'
+          let num2=20;
+          console.log(num2);
+          num2 =25; // No Error
+          console.log(num2); //25
+
+          *(1) cannot Access the variable before initialization , Error
+          *(2) can re-assign the value(mutable)
+          *(3) has a block scope
+
+(3) const 
+          console.log(num2);    //uncaught Reference Error: cannot access 'num2'
+          let num2=10;
+          console.log(num2);
+          num2 =25; // Error
+          console.log(num2); // 25
+
+          *(1) cannot Access the variable before initialization , Error
+          *(2) can re-assign the value(mutable)
+          *(3) has a block scope
+
+
+scope variable : visibility of a vasibility of a variable of a variable in a programer
+
+line 1
+line 2// create a variable 
+Ex-
+var num = [10,"React",true ,67.98];
+console.log(num[0]);
+
+
+/*********************Datatype in js *******************************/
+
+
+Datatype: type of data a variable can hold
+
+(1) Primitive Datatype
+    - number (digit, integer, float, decimal)
+    - string (char, varchar, false:0)
+(2) Reference Datatype -
+    -array: contigous location of memory holding the data
+    -funcation (classes)
+    -object
+(3) othere Data type
+    - undifined: variable whose value is not defined
+    - null: empty object
+
+/**************** operators in js *****************************/
+
+(1) Arithmetic operators
+    a. + : adds number 
+    b. - : subtract number 
+    c. * : multiplies number 
+    d. / : divides two number 
+    e. % : it gives the reminder of a division operation
+    g. increment
+       i. post increment
+       ii. pre increment
+    h. decrement
+       i. post decrement 
+       ii. pre  increment
+
+(2) Assigment operators
+   a. = used to assign a value
+   b. = concise way of representation
+
+(3) comparison operators
+   a. == it compares the data value on both sides and not the data types
+
+   /*******Example**********/
+            var num="10";
+            var num="100";
+           
+           console.log(num==num1);
+           console.log(num===num1);
+
+   b. ==  it compares the data value on both sides as well as the data types
+   c. == check rest in PPT
+
+ 
+(4) Logical operators
+  a. && it check the condition on both sides, if both are true , then it 
+   return true 
+  b. || it check the condition on both sides, if either one of them is 
+   true, then it return true 
+  c. ! it gives you negation / inversion of the value 
+
+  /*****************************Example**********************************/
+   
+       var num1=20;
+       console.log (num1);
+       console.log(typeof num1);
+
+       var num2=20.32;
+       console.log (num2);
+       console.log(typeof num2);
+
+
+       var str1="A";
+       console.log (str1);
+       console.log(typeof str1);
+
+        var str2="Rohit";
+        console.log (str2);
+       console.log(typeof str2);
+
+       var b1=true;
+       console.log(typeof b1); //bollean
+
+       
+       var b2=False;
+       console.log(typeof b2); //bollean
+
+
+       var ud1=undefiend;
+        console.log(typeof ud1); //undefiend
+
+         var null1= null;
+        console.log(typeof null1); // object
+
+        var name; // undeffined  
+
+        //Arithmetic operators//
+
+        var num1 =15;
+        var num2 =20;
+        var num3 = num1+num2;
+        console.log(num3);
+
+        var num1 =15;
+        var num2 =20;
+        var num3 = num1-num2;
+        console.log(num3); 
+
+        var num1 =15;
+        var num2 =20;
+        var num3 = num1/num2;
+        console.log(num3);
+
+        var num1 =15;
+        var num2 =20;
+        var num3 = num1*num2;
+
+        var num1 =15;
+        var num2 =20;
+        var num3 = num1%num2;
+        console.log(num3);  
+       
+        var num1=10;
+        console.log("post increment", num1++); //10
+       console.log("pre increment", ++num1); //12
+
+        var num1=10;
+        console.log("post decrement", num1--); //10
+       console.log("pre decrement", --num1); //12
+
+
+       Assignment operators 
+
+       var x=10;
+       var y=20;
+
+       
+       x=x+1 ;//11
+       x += 1; //12
+        
+       y=x-1 ;//19
+       x -= 1; //18
+
+       x=x*1 ;//20
+       x *= 1; //40
+        
+       y=x/1 ;//19
+       x /= 1; //18
+
+
+       //Comparsion operators 
+        
+        var num1=10;
+        var num2="10";
+
+        if(num1==num2){
+              console.log("both are equal");
+        }
+              else{
+                     console.log("not equal")
+              }
+        
+
+
+        var num3=10;
+        var num4="10";
+
+        if(num3===num4){
+              console.log("both are equal");
+        }
+              else{
+                     console.log("not equal");
+              }
+        
+
+         var num1=10;
+        var num2="10";
+
+        if(num1 != num2){
+              console.log("not equal");
+        }
+              else{
+                     console.log(" equal")
+              }
+        
+
+
+        var num3=10;
+        var num4="10";
+
+        if(num3 !== num4){
+              console.log("not  equal");
+        }
+              else{
+                     console.log(" equal");
+              }
+        
+
+        var a= false;
+        var b= false;
+        if (a||b){
+              console.log("eiher is true");
+        }
+        else {
+              console.log("True")
+        }
+
+       console.log(a);
+       console.log(!a);
+
+        
+
+/***************** variable in js *******************/
+ 
+//console.log(num1);  // undefined - Hosting 
+// var num1 = 10;
+// console.log(num1);
+// num1 =15; //No Error
+// console.log(num1); //15
+
+/*
+(1) accesss the variable before initialization,no Error
+(2) can re-assign the variable (mutable)
+(3) it has a funcation scope 
+/*
+
+
+
+/******************************* classes in js ****************************************/
+
+ES5- no classes in js
+ES6- js introduced classes
+
+this - keyword is used to refer to the class
+
+class <name_of_class>  {
+      // data members
+      // funcatioalities
+}
+
+// without constructor funcation
+class myclass {
+
+      // data members
+      name = "sahil";
+      rollNO = 21;
+      subjects = [
+            "maths"'
+            "s.st",
+            "science",
+            "English";
+            "Hindi"
+      ];
+
+      // funcationalites
+
+      printName() {
+            console.log(this.name);
+
+      }
+
+      addsubject(subject) {
+            this.subject.push(subject);
+            this.printName();
+      }
+
+      getAllsubjects() {
+            return this.subjects;
+      }
+
+}
+
+  // to execute the funcationalities of a class create an object of that class
+
+  var myobj = new myclass(); // it create a new object of the class
+
+   console.log(myobj.name); // "sahil"
+   console.log(myobj.rollno); // 21
+   console.log(myobj.subjects); // ["Maths', "s.st", "science", "English", "Hindi"]
+   console.log(myobj.addsubject("react"));
+   console.log(myobj,getAllsubject()); //["Maths", "s.st", "science", "English", "Hindi"]
+
+
+   // with constructor funcation
+   class myclass {
+
+      // data members
+      name ="Mayur";
+      rollNO ="51";
+      subject = [
+            "Maths",
+            "s.st"
+            "science",
+            "English",
+            "Hindi"
+      ];
+
+      // funcationalites
+
+     constructor(_name, _rollNo) {
+            this.name = _name;
+            this.rollNo = _rollNo;
+
+
+      }
+
+      printName() {
+           console.log(this.name);
+      }
+
+      addsubject(subject) {
+             this.subjects.push(subject);
+             this.printName();
+
+      }
+  }
+  var myobj2 = new myclass("Amit", 31);
+  console.log(myobj2.name); // "Amit"
+  console.log(myobj3.rollno); // 31
+
+/********************************* *use strict* continued 15/7/24 ******************************************//
+
+'use strict'
+
+this.table = "House Table";
+
+const cleam = function() {
+      console.log(`${this.table} claned !!`);
+}
+
+clean();// Error
+
+/********************************* call funcation ******************************************/
+
+// If you can attach a context while calling the funcation:
+  a. you need to assign the context to local variables
+  b.You can reause the same funcation in various diff contexets
+
+ 'use strict'
+
+this.table = "House Table";
+
+var furniture = {
+      table : "class Table"
+
+}
+
+const clean = function() {
+      console.log(`${this.table} cleaned !!`);
+}
+
+clean.call(this); // "Housee Table cleaned !!"
+
+let obj = {
+      table: "obj Table"
+}
+
+clean.call(obj); //"obj Table cleaned !!"
+
+// passing params in call funcation
+
+//'use strict'
+
+this.table="House table";
+
+const clean = function(name, name2, nam3) {
+      console.log(`${this.table} cleaned by ${name} and ${name2} and ${nam3} !!`);
+
+}
+
+clean(); //Error 
+
+clean.call(this, "Ritvi", "sahil", "rakesh"); // "House table cleaned !!"
+
+let obj = {
+      table: "obj Table"
+}
+
+clean.call(obj, "Pratik"); //"obj Table cleaned !!"
+
+/************************************ javascript ********************************************/
+
+// Function to reverse a string
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+// Example usage:
+let originalString = "Hello, Sahil!";
+let reversedString = reverseString(originalString);
+console.log("Original string:", originalString);
+console.log("Reversed string:", reversedString);
+
+
+/************************************** Example array ***************************************/
+let numbers = [1, 3, 5, 7, 9];
+
+// Function to search for an element in the array
+function searchElement(arr, element) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === element) {
+            return true; // Element found
+        }
+    }
+    return false; // Element not found
+}
+
+// Example usage:
+let searchNumber = 5;
+let isElementFound = searchElement(numbers, searchNumber);
+
+if (isElementFound) {
+    console.log(`${searchNumber} found in the array.`);
+} else {
+    console.log(`${searchNumber} not found in the array.`);
+
+}
+
+/************************************************ Apply Funcation 16-7-24 *********************************/
+
+'use strict';
+
+this.num = 10;
+
+function sum(...paramsArray) {
+  let res = 0;
+  for(let i = 0; i < paramsArray.length; i++) {
+    res += paramsArray[i];
+  }
+  return this.num + res; // this.num will refer to the global this
+}
+
+var arrayofParams = [20, 30, 40, 50, 60, 70];
+var result = sum.apply(this, arrayofParams); // Using apply to pass array elements as arguments
+
+console.log(result); // Outputs: 280
+
+
+
+*difference between clean and apply
+dean()--pass current context simple parameter pass that time we go clean fumcation.
+apply()--pass context deal with aray that we use apply funcation.
+
+*(3)difference betwen rest and spread?
+   ==>The spread operator is uaed to `spread` in iterable into its elements,
+      while the Rest operator `collects` multiplies element into an array
+
+/******************************************************* Bind Function *****************************************************/
+
+<script>
+      `use strict`
+
+
+this.table ="House Table";
+
+const clean=funcation(name,name2,name3){
+      console.log(`${this.table} cleaned by ${name},{name2},${name3}!!`);
+             
+}
+clean.call(this, "sahil", "pratik", "Adesh");//you got an immediate output,clean funcation will be immediately executed
+
+var myBinfunction = clean.bind("sahil");//you don't get an immediate output here,clean funcation will not be executed immediately
+
+myBindFuncation("Pratik", "Adesh");//clean funcation will executed and you get output
+</script>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h2> Tranformation</h2>
+
+      <!--
+           - which allows the user to move rotate scale and skwe any HTML element.
+           
+           
+           -> 2D Transformation
+              -scale
+              -translate
+              -rotate
+              -skew
+              -matrix
+              
+              
+            -> 3D Transformation
+               -Rotate x
+               -Rotate Y
+               -Rotate Z
+        -->
+          
+       
+        <!--scale-->
+        <h3>Sclae</h3>
+        <style>
+            .scale {
+                background-color: darkgoldenrod;
+                width: 200px;
+                height: 100px;
+                margin: 100px;
+            }
+            .scale:hover {
+                background-color: lightblue;
+                transform: scale(2,2);
+            }
+
+        </style>
+        <div class= "scale">on hover the box its scale twice its size</div>
+
+        <hr>
+        <!--Translet-->
+        <h3>Translate</h3>
+        <style>
+             .translate{
+                 background-color: orange;
+                 width: 200px;
+                 height: 100px;
+                 margin: 100px;
+            }
+            .translate:hover {
+               
+                transform: translate(50px,20px);
+            }
+        </style>
+        <div class="translate"> on hover the box,its change the color</div>
+
+        <hr>
+        <!--Rotate-->
+        <h3>Rotate</h3>
+        <style>
+            .rotate{
+                background-color:blue;
+                width: 200px;
+                height: 100px;
+                margin: 100px;
+           }
+           .rotate:hover {
+              
+               transform:rotate(90deg);
+           }
+       </style>
+       <div class="rotate"> on hover the box,its change the color</div>
+        <hr>
+        
+         <!--skew-->
+         <h3>skew</h3>
+         <style>
+            .skew{
+                background-color:brown;
+                width: 200px;
+                height: 100px;
+                margin: 100px;
+           }
+           .skew:hover {
+              
+               transform:skew(5deg,10deg);
+           }
+       </style>
+       <div class="skew"> on hover the box,its change the color</div>
+        <hr>
+
+         <!--Matrix
+               -it is used for all the 2d treansfor method th be used all at once
+               -syntex
+                  matrix(scalex()),skew(), scaleY(), translateX(), translateY())-->
+         <h3>Matrix</h3>
+         <style>
+            .matrix{
+                background-color:rgb(42, 116, 165);
+                width: 200px;
+                height: 100px;
+                margin: 100px;
+           }
+           .matrix:hover {
+              
+               transform:matrix(2, 1, 1, 2, 80, 100);
+           }
+       </style>
+       <div class="matrix"> on hover the box,its 2d transform change the color</div>
+        <hr>
+        
+</body>
+</html>
